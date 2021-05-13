@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Multimedia</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,600;1,100;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="main.js" type="text/javascript"></script>
+</head>
+<body onload="">
+    <header>
+        <nav></nav>
+    </header>
+
+    <aside>
+        <nav></nav>
+    </aside>
+
+    <section>
+        <h1>Multimedia</h1>
+        <article>
+            <h2>Audio</h2>
+            <audio controls>
+                <source src="./assets/audio.mp3" type="audio/mpeg">
+                <source src="./assets/audio.ogg" type="audio/ogg">
+            </audio>
+            <h2>Video</h2>
+            <!--Se incluye el atributo poster para tener algo que motrar si tarda la carga del video-->
+            <video width="100%" controls poster="./assets/remedios_varo-3_bird-1024x854.jpg">
+                <source src="./assets/video.mp4" type="video/mp4">
+                <source src="./assets/video.webm" type="video/webm">
+            </video>
+
+            <!--Para trabajar gráficos, juegos y cosas más avanzadas (JS) en 2D y 3D-->
+            <canvas id="micanvas" width="400" height="300"></canvas>
+
+            <!--También se puede trabajar con el tipo object-->
+
+        </article>
+    </section>
+    <footer>
+    </footer>
+</body>
+</html>
