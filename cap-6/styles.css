@@ -1,0 +1,11 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#imagen_fondo {
+    width: 200px;
+    height: 200px;
+    background-image: url(./assets/cerebro.png);
+    background-repeat: no-repeat;
+    background-position: -45px 50px;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Imagenes</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="icon" href="./assets/cerebro.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,600;1,100;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="main.js" type="text/javascript"></script>
+</head>
+<body onload="">
+    <header>
+        <nav></nav>
+    </header>
+
+    <aside>
+        <nav></nav>
+    </aside>
+
+    <section>
+        <h1>Imagenes y HTML</h1>
+        <article>
+            <!--Imagenes que aporten algún valor al contenido-->
+            <h2>Etiquetas de imagen</h2>
+            <img src="./assets/remedios_varo-3_bird-1024x854.jpg"  width="300" alt="Pintura Remedios" title="Pintura Remedios">
+
+            <!--Imagenes que sólo están ahí para aportar valor visual de fondo-->
+            <h2>Imágenes de fondo</h2>
+            <div id="imagen_fondo"></div>
+
+            <!--Imágenes para adpatarlas a la resolución del dispositivo-->
+            <h2>Imágenes en HTML5</h2>
+            <picture>
+                <source srcset="./assets/remedios_varo-3_bird-1024x854.jpg" media="(min-width:300px)">
+                <source srcset="./assets/cerebro.png" media="(min-width:600px)">
+            </picture>
+
+            <!--Resivar mejor como utilizar Font Awesome-->
+            <h2>Iconos</h2>
+            <a href="#">Ver fotos<i class="fa fa-link"></i></i></a>
+
+            <!---->
+            <h2>Mapas de imagen</h2>
+            <img src="./assets/remedios_varo-3_bird-1024x854.jpg" width="400" usemap="#creador">
+            <map name="creador">
+                <area shape="rect" coords="150,20,300,400" href="https://duckduckgo.com/?q=aves&atb=v267-1&iax=images&ia=images" alt="buho" title="buho">
+                <area shape="rect" coords="100,20,150,400" href="https://duckduckgo.com/?q=matraz+bola&atb=v267-1&iar=images&iax=images&ia=images" alt="matraz" title="matraz">
+            </map>
+
+        </article>
+    </section>
+    <footer>
+    </footer>
+</body>
+</html>
