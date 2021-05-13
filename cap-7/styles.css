@@ -1,0 +1,42 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 0 auto;
+    background-color: linen;
+}
+
+td.col1 {
+    width: 25%;
+}
+
+td.col2 {
+    width: 40%;
+}
+
+table, td, th {
+    border: 2px solid #ffffff   ;
+    text-align: center;
+}
+
+td {
+    background-color: mediumturquoise;
+}
+
+thead {
+    background-color: mediumslateblue;
+}
+
+td, th {
+    padding: 10px 4px;
+}
+
+iframe {
+    border: none;
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+}
