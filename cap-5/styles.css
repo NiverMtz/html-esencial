@@ -1,0 +1,39 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#contents {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    background-color:lightgreen;
+}
+
+.bloque_dcha {
+    display: inline-block;
+    width: 40%;
+}
+
+.bloque_izda {
+    display: inline-block;
+    width: 40%;
+}
+
+ul {
+    list-style:circle;
+    padding: 10px;
+}
+
+nav ul {
+    padding-left: 0px;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: lime;
+}
+
+nav.horizontal ul li {
+    display: inline-block;
+}
