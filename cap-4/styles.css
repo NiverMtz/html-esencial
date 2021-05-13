@@ -1,0 +1,16 @@
+/*Estilos principales de la página*/
+body{
+    color:rgba(0,0,0,0.5);
+    font-size: 19px;
+    background-color:rgba(0,0,0,0.05);
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    color: #004d2a;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #cccccc;
+}
