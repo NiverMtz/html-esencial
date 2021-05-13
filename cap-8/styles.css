@@ -1,0 +1,24 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+textarea {
+    resize: none;
+    width: 400px;
+    height: 120px;
+}
+
+label {
+    width: 130px;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+/* Para móviles
+
+label {
+    width: 130px;
+    display: block;
+    margin-bottom: 0;
+    margin-top: 8px;
+}*/

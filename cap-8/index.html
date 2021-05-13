@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Formularios</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,600;1,100;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="main.js" type="text/javascript"></script>
+</head>
+<body onload="">
+    <header>
+        <nav></nav>
+    </header>
+
+    <aside>
+        <nav></nav>
+    </aside>
+
+    <section>
+        <h1>Formularios</h1>
+        <form action="http://midominio.com/miservicioWeb.php" method="post">
+            <fieldset>
+                <legend>Datos de Usuario</legend>
+                    <label for="nombre">Nombre</label>
+                    <input name="nombre" id="nombre" type="text" placeholder="Escribe tu nombre" required>
+                    <br>
+                    <label for="apdo">Apellido</label>
+                    <input name="apdo" id="apdo" type="text" placeholder="Primer apellido">
+                    <br>
+                    <label for="edad">Edad</label>
+                    <input name="edad" id="edad" type="number" placeholder="Ingrese edad">
+                    <br>
+                    <label for="clave">Contraseña</label>
+                    <input name="clave" id="clave" type="password" placeholder="Escribe tu clave">
+                    <br>
+                    <label for="email">Email</label>
+                    <input name="email" id="email" type="email" placeholder="Escribe tu email">
+                    <br>
+                    <label for="tipo">Tipo</label>
+                    <input name="tipo" id="tipo" type="text" value="Becario" disabled>
+            </fieldset>
+            <fieldset>
+                <legend>Otros datos</legend>
+                <label for="comentarios">Comentarios</label>
+                <textarea name="comentarios" id="comentarios"></textarea>
+                            <!--Check y Radio buttons-->
+
+            <br>
+            <label for="envio_mail">Enviar mail</label>
+            <input type="checkbox" name="envio_mail" id="envio_mail">
+            <label for="llamar_tel">Llamar</label>
+            <input type="checkbox" name="llamar_tel" id="llamar_tel">
+
+            <!--Radio-->
+            <br>
+            <label for="rojo">Rojo</label>
+            <input type="radio" name="color" id="rojo" value="rojo">
+            <label for="verde">Verde</label>
+            <input type="radio" name="color" id="verde" value="verde">
+            <label for="azul">Azul</label>
+            <input type="radio" name="color" id="azul" value="azul">
+
+            <!--Menús desplegables-->
+            <br>
+            <label for="paises">Nación</label>
+            <select name="paises" id="paises">
+                <optgroup label="Europa">
+                    <option value="es">España</option>
+                    <option value="fr" selected>Francia</option>
+                </optgroup>
+                <optgroup label="América">
+                    <option value="ar">Argentina</option>
+                </optgroup>
+            </select>
+
+            <!--Datalist-->
+            <br>
+            <label for="ciudad">Ciudad</label>
+            <input name="ciudad" id="ciudad" list="nom_cd">
+            <datalist id="nom_cd">
+                <option value="CDMX"></option>
+                <option value="EDOMEX"></option>
+                <option value="OAX"></option>
+            </datalist>
+            </fieldset>
+
+            <!--Botones-->
+            <input type="submit">
+            <input type="reset">
+
+            <!--En esta forma se pueden agregar iconos o imagenes-->
+            <button>Enviar con Botton <i class="fa fa-link"></i></button>
+
+            <!--Validaciones más complicadas se requiere de JS-->
+
+            <hr>
+            <h2>Number</h2>
+            <input type="number" name="" id="" min="2" max="10" step="2">
+            <h2>Range</h2>
+            <input type="range">
+            <h2>Date</h2>
+            <input type="date">
+            <h2>Email</h2>
+            <input type="email">
+            <h2>URL</h2>
+            <input type="url">
+            <h2>File</h2>
+            <input type="file" accept="img/jgp">
+
+            <!--Enviar información que no intersa al usuario-->
+            <input type="hidden" name="sitio" value="cont" id="">
+        </form>
+    </section>
+    <footer>
+    </footer>
+</body>
+</html>
