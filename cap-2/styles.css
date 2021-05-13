@@ -1,0 +1,12 @@
+/*Estilos principales de la página*/
+body {
+    color:rgba(0,0,0,0.5);
+    font-size: 18px;
+    background-color:rgba(0,0,0,0.05);
+    font-family: 'Montserrat', sans-serif;
+}
+
+#ex1 {
+    border-bottom: 1px solid;
+    padding-bottom: 10px;
+}
